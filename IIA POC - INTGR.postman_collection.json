@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "77019770-d358-41ce-b982-e25fc1f3e95f",
+		"_postman_id": "4deab441-734f-4b8d-8fc2-243805c1e32a",
 		"name": "IIA POC - INTGR",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "39579054",
-		"_collection_link": "https://interstellar-shadow-436220.postman.co/workspace/Cloud_Test_Workspace~6875cda0-6425-43fa-8a6b-fb5c7479890b/collection/39683404-77019770-d358-41ce-b982-e25fc1f3e95f?action=share&source=collection_link&creator=39579054"
+		"_exporter_id": "39579054"
 	},
 	"item": [
 		{
@@ -126,6 +125,57 @@
 						"poc",
 						"IIA",
 						"GRRecurringCheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EXAMPLE 01",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SalesOrganization",
+						"value": "1710",
+						"type": "text"
+					},
+					{
+						"key": "Price",
+						"value": "112677.00 USD",
+						"type": "text"
+					},
+					{
+						"key": "CreatedAt",
+						"value": "23.01.05",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Material>MZ-FG-M550</Material>\r\n\r\n\r\n\r\n"
+				},
+				"url": {
+					"raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/getMaterialDetails",
+					"protocol": "https",
+					"host": [
+						"integration-7dvs6622",
+						"it-cpi005-rt",
+						"cfapps",
+						"eu20",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"http",
+						"consolut",
+						"learn",
+						"DRP",
+						"getMaterialDetails"
 					]
 				}
 			},
